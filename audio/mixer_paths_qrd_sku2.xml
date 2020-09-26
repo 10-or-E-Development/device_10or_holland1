@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 <!--
-    Copyright (c) 2015-2016 The Linux Foundation. All rights reserved.
+    Copyright (c) 2015-2016, The Linux Foundation. All rights reserved.
 
     Redistribution and use in source and binary forms, with or without
     modification, are permitted provided that the following conditions are
@@ -111,13 +111,10 @@
     <ctl name="MultiMedia1 Mixer INTERNAL_BT_SCO_TX" value="0" />
     <ctl name="PRI_MI2S_RX_Voice Mixer CSVoice" value="0" />
     <ctl name="Voice_Tx Mixer TERT_MI2S_TX_Voice" value="0" />
-    <ctl name="PRI_MI2S_RX Port Mixer INT_BT_SCO_TX" value="0" />
     <!-- Voice BTSCO -->
     <ctl name="Internal BTSCO SampleRate" value="BTSCO_RATE_8KHZ" />
     <ctl name="INTERNAL_BT_SCO_RX_Voice Mixer CSVoice" value="0" />
     <ctl name="Voice_Tx Mixer INTERNAL_BT_SCO_TX_Voice" value="0" />
-    <ctl name="INTERNAL_BT_SCO_RX Audio Mixer Multimedia6" value="0" />
-    <ctl name="MultiMedia6 Mixer TERT_MI2S_TX" value="0" />
 
     <!-- Voice2 -->
     <ctl name="PRI_MI2S_RX_Voice Mixer Voice2" value="0" />
@@ -848,8 +845,14 @@
     </path>
 
     <path name="speaker">
-        <ctl name="RX3 MIX1 INP1" value="RX1" />
-        <ctl name="SPK" value="Switch" />
+        <ctl name="SPK DAC Switch" value="1"/> 
+	<ctl name="MI2S_RX Channels" value="One" /> 
+	<ctl name="RX1 MIX1 INP1" value="RX1" /> 
+	<ctl name="RX2 MIX1 INP1" value="RX2" /> 
+	<ctl name="RDAC2 MUX" value="RX2" /> 
+	<ctl name="HPHL" value="Switch" /> 
+	<ctl name="HPHR" value="Switch" /> 
+        <ctl name="Ext Spk Switch" value="On"/>
     </path>
 
     <path name="wsa-speaker">
@@ -904,12 +907,17 @@
         <ctl name="RDAC2 MUX" value="RX2" />
         <ctl name="HPHL" value="Switch" />
         <ctl name="HPHR" value="Switch" />
+        <ctl name="EXT SPK PA" value="Off" />
     </path>
 
     <path name="headset-mic">
         <path name="adc2" />
         <ctl name="ADC2 MUX" value="INP2" />
         <ctl name="IIR1 INP1 MUX" value="DEC1" />
+    </path>
+
+	<path name="sub-mic">
+        <path name="adc3" />
     </path>
 
     <path name="sidetone-iir">
@@ -958,8 +966,8 @@
     </path>
 
     <path name="speaker-and-headphones">
-        <path name="speaker" />
         <path name="headphones" />
+        <ctl name="Ext Spk Switch" value="On" />
     </path>
 
     <path name="usb-headphones">
