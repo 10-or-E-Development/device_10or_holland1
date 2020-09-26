@@ -15,7 +15,7 @@
 #
 
 # Inherit proprietary files
-$(call inherit-product, vendor/xiaomi/land/land-vendor.mk)
+$(call inherit-product, vendor/10or/holland1/hollan1-vendor.mk)
 
 # Installs gsi keys into ramdisk, to boot a GSI with verified boot.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_keys.mk)
@@ -25,8 +25,8 @@ DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay
 
 # Boot animation
-TARGET_SCREEN_HEIGHT := 1280
-TARGET_SCREEN_WIDTH := 720
+TARGET_SCREEN_HEIGHT := 1920
+TARGET_SCREEN_WIDTH := 1080
 
 # Screen density
 PRODUCT_AAPT_CONFIG := normal

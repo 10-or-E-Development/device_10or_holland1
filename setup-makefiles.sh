@@ -19,8 +19,8 @@
 set -e
 
 # Required!
-DEVICE=land
-VENDOR=xiaomi
+DEVICE=holland1
+VENDOR=10or
 
 INITIAL_COPYRIGHT_YEAR=2016
 

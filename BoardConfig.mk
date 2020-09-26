@@ -14,7 +14,7 @@
 # limitations under the License.
 #
 
-DEVICE_PATH := device/xiaomi/land
+DEVICE_PATH := device/10or/holland1
 
 TARGET_SPECIFIC_HEADER_PATH := $(DEVICE_PATH)/include
 
@@ -50,8 +50,8 @@ BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
 BOARD_KERNEL_PAGESIZE :=  2048
 BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x01000000 --second_offset 0x00f00000 --tags_offset 0x00000100
 #TARGET_KERNEL_CLANG_COMPILE := true
-TARGET_KERNEL_CONFIG := land_defconfig
-TARGET_KERNEL_SOURCE := kernel/xiaomi/msm8937
+TARGET_KERNEL_CONFIG := holland1_defconfig
+TARGET_KERNEL_SOURCE := kernel/10or/holland1
 
 # ANT+
 BOARD_ANT_WIRELESS_DEVICE := "vfs-prerelease"
@@ -148,6 +148,7 @@ TARGET_USES_GRALLOC1 := true
 TARGET_USES_HWC2 := true
 TARGET_USES_COLOR_METADATA := true
 TARGET_USES_OVERLAY := true
+TARGET_SCREEN_DENSITY := 420
 
 NUM_FRAMEBUFFER_SURFACE_BUFFERS := 3
 
@@ -256,4 +257,4 @@ WIFI_DRIVER_FW_PATH_STA := "sta"
 WPA_SUPPLICANT_VERSION := VER_0_8_X
 
 # Inherit the proprietary files
--include vendor/xiaomi/land/BoardConfigVendor.mk
+-include vendor/10or/holland1/BoardConfigVendor.mk
