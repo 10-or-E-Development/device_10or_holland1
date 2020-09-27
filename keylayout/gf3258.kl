@@ -1,0 +1,29 @@
+
+#
+# Goodix Touch sensor driver
+#
+# Copyright (c) 2017 Goodix
+#
+# This program is free software; you can redistribute it and/or
+# modify it under the terms of the GNU General Public License Version 2
+# as published by the Free Software Foundation.
+#
+
+
+key 230   SOFT_RIGHT
+key 60    SOFT_LEFT
+
+
+key 232   DPAD_CENTER
+key 108   DPAD_DOWN
+key 103   DPAD_UP
+key 105   DPAD_LEFT
+key 106   DPAD_RIGHT
+key 115   VOLUME_UP
+key 114   VOLUME_DOWN
+key 212   CAMERA
+
+
+key 466   FINGERPRINT_SWIPE_UP
+key 467   FINGERPRINT_SWIPE_DOWN
+
