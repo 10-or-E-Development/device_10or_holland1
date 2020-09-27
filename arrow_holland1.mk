@@ -15,7 +15,7 @@
 # limitations under the License.
 #
 
-DEVICE_PATH := device/xiaomi/land
+DEVICE_PATH := device/10or/holland1
 
 # Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
