@@ -612,3 +612,10 @@ service vendor.msm_irqbalance /vendor/bin/msm_irqbalance -f /system/vendor/etc/m
 on property:init.svc.surfaceflinger=restarting
     restart vendor.hwcomposer-2-1
 
+
+mkdir /data/vendor/camera 0770 camera camera
+mkdir /data/misc/camera 0770 camera camera
+
+    #enable camera read sensors data
+    setprop persist.camera.gyro.disable 0
+
