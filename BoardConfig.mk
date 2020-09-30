@@ -191,9 +191,9 @@ DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/manifest.xml
 DEVICE_MATRIX_FILE   := $(DEVICE_PATH)/compatibility_matrix.xml
 
 # Init
-TARGET_INIT_VENDOR_LIB := libinit_land
+TARGET_INIT_VENDOR_LIB := libinit_holland1
 TARGET_PLATFORM_DEVICE_BASE := /devices/soc/
-TARGET_RECOVERY_DEVICE_MODULES := libinit_land
+TARGET_RECOVERY_DEVICE_MODULES := libinit_holland1
 
 # Keymaster
 TARGET_PROVIDES_KEYMASTER := true
@@ -233,6 +233,7 @@ include device/qcom/sepolicy-legacy-um/sepolicy.mk
 
 BOARD_PLAT_PRIVATE_SEPOLICY_DIR += $(DEVICE_PATH)/sepolicy/private
 BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy
+SELINUX_IGNORE_NEVERALLOWS := true
 
 # Treble
 ENABLE_VENDOR_IMAGE := true
