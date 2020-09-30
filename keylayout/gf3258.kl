@@ -9,21 +9,10 @@
 # as published by the Free Software Foundation.
 #
 
+# Fingerprint gestures keylayout for goodix
 
-key 230   SOFT_RIGHT
-key 60    SOFT_LEFT
-
-
-key 232   DPAD_CENTER
-key 108   DPAD_DOWN
-key 103   DPAD_UP
-key 105   DPAD_LEFT
-key 106   DPAD_RIGHT
-key 115   VOLUME_UP
-key 114   VOLUME_DOWN
-key 212   CAMERA
-
-
-key 466   FINGERPRINT_SWIPE_UP
-key 467   FINGERPRINT_SWIPE_DOWN
+key 103  SYSTEM_NAVIGATION_UP
+key 105  SYSTEM_NAVIGATION_LEFT
+key 106  SYSTEM_NAVIGATION_RIGHT
+key 108  SYSTEM_NAVIGATION_DOWN
 
