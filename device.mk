@@ -15,7 +15,7 @@
 #
 
 # Inherit proprietary files
-$(call inherit-product, vendor/10or/holland1/hollan1-vendor.mk)
+$(call inherit-product, vendor/10or/holland1/holland1-vendor.mk)
 
 # Installs gsi keys into ramdisk, to boot a GSI with verified boot.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_keys.mk)
