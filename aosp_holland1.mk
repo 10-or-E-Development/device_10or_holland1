@@ -22,15 +22,19 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Inherit some common Lineage stuff
-$(call inherit-product, vendor/arrow/config/common.mk)
+$(call inherit-product, vendor/aosp/config/common.mk)
 
 # Inherit from land device
 $(call inherit-product, $(DEVICE_PATH)/device.mk)
 
+# PixelExperience Properties
+TARGET_GAPPS_ARCH := arm64
+TARGET_BOOT_ANIMATION_RES := 1080
+
 PRODUCT_BRAND := 10or
 PRODUCT_DEVICE := holland1
 PRODUCT_MANUFACTURER := 10or
-PRODUCT_NAME := arrow_holland1
+PRODUCT_NAME := aosp_holland1
 DEVICE_MAINTAINER := Shubham Panwar
 PRODUCT_MODEL := E
 

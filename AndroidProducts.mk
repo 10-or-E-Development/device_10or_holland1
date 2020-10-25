@@ -14,8 +14,8 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/arrow_holland1.mk
+    $(LOCAL_DIR)/aosp_holland1.mk
 
 COMMON_LUNCH_CHOICES := \
-    arrow_holland1-userdebug \
-    arrow_holland1-eng
+    aosp_holland1-userdebug \
+    aosp_holland1-eng
